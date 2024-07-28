@@ -10,6 +10,17 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="com.github.mrolappe.ijmrcl.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        
+        <fileType name="MRCL" fieldName="INSTANCE" extensions="mrcl" language="MRCL"
+                  implementationClass="de.rholambdapi.mrcl.intellij.language.MrclFileType" />
+
+        <lang.parserDefinition language="MRCL"
+                               implementationClass="de.rholambdapi.mrcl.intellij.language.MrclParserDefinition" />
+
+        <lang.syntaxHighlighterFactory language="MRCL"
+                                       implementationClass="de.rholambdapi.mrcl.intellij.language.MrclSyntaxHighlighterFactory" />
+
+        <colorSettingsPage implementation="de.rholambdapi.mrcl.intellij.language.MrclColorSettingsPage" />
     </extensions>
 
     <applicationListeners>
