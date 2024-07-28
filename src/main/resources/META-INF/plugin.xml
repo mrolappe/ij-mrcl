@@ -21,6 +21,9 @@
                                        implementationClass="de.rholambdapi.mrcl.intellij.language.MrclSyntaxHighlighterFactory" />
 
         <colorSettingsPage implementation="de.rholambdapi.mrcl.intellij.language.MrclColorSettingsPage" />
+
+        <lang.commenter language="MRCL"
+                        implementationClass="de.rholambdapi.mrcl.intellij.language.MrclCommenter" />
     </extensions>
 
     <applicationListeners>
