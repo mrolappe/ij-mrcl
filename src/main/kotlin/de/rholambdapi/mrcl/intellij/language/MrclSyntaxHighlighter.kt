@@ -19,6 +19,7 @@ class MrclSyntaxHighlighter : SyntaxHighlighterBase() {
         val KEYWORD = createTextAttributesKey("MRCL_KEYWORD", DefaultLanguageHighlighterColors.KEYWORD)
         val STRING = createTextAttributesKey("MRCL_STRING", DefaultLanguageHighlighterColors.STRING)
         val LINE_COMMENT = createTextAttributesKey("MRCL_LINE_COMMENT", DefaultLanguageHighlighterColors.LINE_COMMENT)
+        val BLOCK_COMMENT = createTextAttributesKey("MRCL_BLOCK_COMMENT", DefaultLanguageHighlighterColors.BLOCK_COMMENT)
 
         init {
             PSIElementTypeFactory.defineLanguageIElementTypes(

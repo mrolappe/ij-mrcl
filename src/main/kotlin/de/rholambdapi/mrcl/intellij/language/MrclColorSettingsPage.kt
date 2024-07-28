@@ -14,6 +14,7 @@ class MrclColorSettingsPage : ColorSettingsPage {
             AttributesDescriptor("Keyword", MrclSyntaxHighlighter.KEYWORD),
             AttributesDescriptor("String", MrclSyntaxHighlighter.STRING),
             AttributesDescriptor("Line comment", MrclSyntaxHighlighter.LINE_COMMENT),
+            AttributesDescriptor("Block comment", MrclSyntaxHighlighter.BLOCK_COMMENT)
         )
     }
 

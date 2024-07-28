@@ -38,7 +38,11 @@ class MrclParserDefinition : ParserDefinition {
             PSIElementTypeFactory.defineLanguageIElementTypes(MrclLanguage.INSTANCE, MrclParser.tokenNames, MrclParser.ruleNames)
             val tokenIElementTypes = PSIElementTypeFactory.getTokenIElementTypes(MrclLanguage.INSTANCE)
             ID = tokenIElementTypes[MrclLexer.ID]
-            COMMENT_TOKENS = PSIElementTypeFactory.createTokenSet(MrclLanguage.INSTANCE, MrclLexer.LINE_COMMENT)
+            COMMENT_TOKENS = PSIElementTypeFactory.createTokenSet(
+                MrclLanguage.INSTANCE,
+                MrclLexer.LINE_COMMENT,
+                MrclLexer.BLOCK_COMMENT
+            )
             WS_TOKENS = PSIElementTypeFactory.createTokenSet(MrclLanguage.INSTANCE, MrclLexer.WS, MrclLexer.EOL)
             STRING_TOKENS = PSIElementTypeFactory.createTokenSet(MrclLanguage.INSTANCE, MrclLexer.STRING_LITERAL)
         }
