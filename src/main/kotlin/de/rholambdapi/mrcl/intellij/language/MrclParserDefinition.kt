@@ -28,6 +28,7 @@ class MrclParserDefinition : ParserDefinition {
     private val log = thisLogger()
 
     companion object {
+        val INSTANCE = MrclParserDefinition()
         val FILE = IFileElementType(MrclLanguage.INSTANCE)
         val ID: TokenIElementType
         val COMMENT_TOKENS: TokenSet
