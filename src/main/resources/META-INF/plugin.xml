@@ -22,6 +22,9 @@
 
         <colorSettingsPage implementation="de.rholambdapi.mrcl.intellij.language.MrclColorSettingsPage" />
 
+        <completion.contributor language="MRCL"
+                                implementationClass="de.rholambdapi.mrcl.intellij.language.MrclCompletionContributor" />
+
         <lang.commenter language="MRCL"
                         implementationClass="de.rholambdapi.mrcl.intellij.language.MrclCommenter" />
     </extensions>
