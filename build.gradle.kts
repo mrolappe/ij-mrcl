@@ -28,7 +28,6 @@ repositories {
 
 // Dependencies are managed with Gradle version catalog - read more: https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog
 dependencies {
-//    implementation(libs.exampleLibrary)
     implementation("org.antlr:antlr4-intellij-adaptor:0.1")
     implementation("de.rholambdapi.mrcl:mrcl-antlr-parser:0.1-SNAPSHOT")
 
