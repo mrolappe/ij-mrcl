@@ -33,7 +33,7 @@ dependencies {
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.junit.jupiter:junit-jupiter:6.0.1")
-    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.8.2")
+    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:6.0.1")
 
     intellijPlatform {
         val type = properties("platformType")
