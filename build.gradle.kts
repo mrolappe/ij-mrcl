@@ -63,7 +63,7 @@ kotlin {
 
 intellijPlatform {
     pluginConfiguration {
-        id = "de.rholambdapi.mrcl.intellij.ij-mrcl"
+        id = "de.rholambdapi.mrcl.ij-mrcl"
         name = properties("pluginName")
         version = properties("pluginVersion")
 
