@@ -1,5 +1,6 @@
 import org.jetbrains.changelog.Changelog
 import org.jetbrains.changelog.markdownToHTML
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
 import org.jetbrains.intellij.platform.gradle.TestFrameworkType
 
 fun properties(key: String) = providers.gradleProperty(key)
@@ -46,8 +47,6 @@ dependencies {
 
         pluginVerifier()
         zipSigner()
-        instrumentationTools()
-
         testFramework(TestFrameworkType.Platform)
         testFramework(TestFrameworkType.JUnit5)
     }
@@ -103,6 +102,15 @@ intellijPlatform {
                     Changelog.OutputType.HTML,
                 )
             }
+        }
+    }
+
+
+    pluginVerification {
+        ides {
+            create(IntelliJPlatformType.IntellijIdeaCommunity, "2024.2")
+            create(IntelliJPlatformType.IntellijIdeaCommunity, "2024.3.6")
+            create(IntelliJPlatformType.IntellijIdeaCommunity, "2025.2.4")
         }
     }
 
