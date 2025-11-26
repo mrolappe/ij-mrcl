@@ -1,0 +1,3 @@
+[submodule "external/mrcl-antlr-parser"]
+	path = external/mrcl-antlr-parser
+	url = git@github.com:mrolappe/mrcl-antlr-parser.git
