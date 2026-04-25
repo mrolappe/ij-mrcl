@@ -9,8 +9,6 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.mrolappe.ijmrcl.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        
         <fileType name="MRCL" fieldName="INSTANCE" extensions="mrcl" language="MRCL"
                   implementationClass="de.rholambdapi.mrcl.intellij.language.MrclFileType" />
 
